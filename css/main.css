@@ -1,6 +1,11 @@
 * {
   color: black;
 }
+
 .main-img {
   width: 50%;
+}
+
+body {
+  background-color: azure;
 }
