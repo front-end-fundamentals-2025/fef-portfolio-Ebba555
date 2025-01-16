@@ -3,13 +3,25 @@
 }
 
 .main-img {
-  width: 50%;
+  width: 40%;
 }
 
 body {
   background-color: azure;
 }
+/* Titles*/
+h1,
+h2 {
+  font-family: "Slabo 27px", serif;
+  color: navy;
+}
 
+/* Main text */
+p {
+  font-family: "Noto Sans", serif;
+}
+
+/* Title 1 */
 h1 {
-  font-family: "DM Sans", serif;
+  font-size: 3rem;
 }
