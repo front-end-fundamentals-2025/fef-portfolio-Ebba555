@@ -10,15 +10,6 @@ body {
   background-color: azure;
 }
 
-p {
-  font-family:// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.noto-serif-<uniquifier> {
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-  }
+h1 {
+  font-family: "Noto Sans", serif;
 }
