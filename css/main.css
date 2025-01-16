@@ -2,13 +2,16 @@
   color: black;
 }
 
+/* Image */
 .main-img {
   width: 40%;
 }
 
+/* Background color */
 body {
   background-color: azure;
 }
+
 /* Titles*/
 h1,
 h2 {
