@@ -1,31 +1,36 @@
+/* All */
 * {
   color: black;
 }
 
+/* My page */
+
 /* Image */
 .main-img {
-  width: 20%;
+  width: 40%;
 }
 
-/* Background color */
+/* Background color : */
 body {
   background-color: azure;
 }
 
-/* Titles*/
+/* Titles : */
 
 h2 {
   font-family: "Slabo 27px", serif;
   color: navy;
 }
 
-/* Main text */
+/* Main text : */
 p {
   font-family: "Noto Sans", serif;
 }
 
-/* Title 1 */
+/* Title 1 :*/
 h1 {
   font-family: "DM Serif Display", serif;
   font-size: 4rem;
 }
+
+/* Contact page */
