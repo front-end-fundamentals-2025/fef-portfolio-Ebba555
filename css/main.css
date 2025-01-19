@@ -7,7 +7,7 @@
 
 /* Image */
 .main-img {
-  width: 40%;
+  width: 200px;
 }
 
 /* link */
@@ -36,7 +36,27 @@ p {
 /* Title 1 :*/
 h1 {
   font-family: "DM Serif Display", serif;
-  font-size: 4rem;
+  font-size: 40px;
   background-color: cornflowerblue;
   margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#name,
+#mail,
+#phone,
+#message {
+  margin-bottom: 7px;
+  margin-top: 7px;
+  margin-left: ce;
+}
+
+#sub {
+  margin-top: 10px;
+  background-color: cadetblue;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
