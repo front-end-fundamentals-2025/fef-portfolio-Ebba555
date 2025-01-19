@@ -60,3 +60,13 @@ h1 {
   padding-left: 8px;
   padding-right: 8px;
 }
+
+footer {
+  background-color: cornflowerblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li {
+  color: blue;
+}
