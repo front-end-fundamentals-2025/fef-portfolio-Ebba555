@@ -75,10 +75,10 @@ p {
   margin-top: 1vw;
   background-color: cadetblue;
   color: white;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* footers */
@@ -96,7 +96,7 @@ footer {
 }
 /*text size*/
 .about {
-  width: 30%;
+  width: 35%;
 }
 
 /* all img for work page */
@@ -105,7 +105,7 @@ footer {
   width: 100%;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 540px) {
   .pic {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -117,4 +117,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* work2 */
+
+.img3 {
 }
