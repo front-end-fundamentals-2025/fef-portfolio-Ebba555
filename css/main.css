@@ -99,18 +99,25 @@ p {
 form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr;
   grid-template-areas:
     ". . ."
     ". form ."
     "  . . .";
 }
-section {
+.blue2 {
   grid-area: form;
   padding-left: 1vw;
+  padding-right: 1vw;
   padding-bottom: 1vw;
   padding-top: 1vw;
   background-color: lightblue;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5vw;
 }
 
 #sub {
@@ -126,10 +133,17 @@ section {
 /* footers */
 footer {
   background-color: cornflowerblue;
-  margin-top: 2vw;
+  height: 2vw;
+  width: 100%;
   margin-bottom: 1vw;
   padding-bottom: 3vw;
   padding-top: 3vw;
+}
+
+.f2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 /* link work - Oxenfree */
@@ -169,19 +183,101 @@ footer {
   .pic {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width: 870px) {
   .pic {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
 /* work2 */
 
 .img3 {
-  width: 70vw;
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 4%;
+}
+
+@media screen and (min-width: 280px) {
+  .img3 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .img3 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .img3 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .img3 {
+    width: 70%;
+  }
+}
+
+/* text */
+.ox {
+  width: 100%;
+}
+
+oxen {
+  margin-left: 1vw;
+}
+
+@media screen and (min-width: 280px) {
+  .ox {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .ox {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .ox {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .ox {
+    width: 90%;
+  }
+}
+
+/* work 2 grid */
+section.w1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    " box1 box2 "
+    " box3 box4 ";
+}
+
+.ox {
+  grid-area: box1;
+}
+.img3 {
+  grid-area: box2;
+}
+
+.ox2 {
+  grid-area: box3;
+}
+
+.w2 {
+  grid-area: box4;
 }
