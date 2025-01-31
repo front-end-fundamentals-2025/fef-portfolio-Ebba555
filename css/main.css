@@ -187,10 +187,18 @@ footer {
   }
 }
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 700px) {
   .pic {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .pic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
@@ -215,18 +223,45 @@ footer {
 
 @media screen and (min-width: 750px) {
   .img3 {
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media screen and (min-width: 800px) {
   .img3 {
-    width: 70%;
+    width: 80%;
+  }
+}
+
+.alex {
+  width: 100%;
+}
+
+@media screen and (min-width: 280px) {
+  .alex {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .alex {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .alex {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .alex {
+    width: 80%;
   }
 }
 
 /* text */
-.ox {
+.ox2 {
   width: 100%;
 }
 
@@ -235,25 +270,29 @@ oxen {
 }
 
 @media screen and (min-width: 280px) {
-  .ox {
-    width: 100%;
+  .ox2,
+  .art {
+    width: 90%;
   }
 }
 @media screen and (min-width: 500px) {
-  .ox {
-    width: 100%;
+  .ox2,
+  .art {
+    width: 90%;
   }
 }
 
 @media screen and (min-width: 750px) {
-  .ox {
+  .ox2,
+  .art {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 850px) {
-  .ox {
-    width: 90%;
+  .ox2,
+  .art {
+    width: 60%;
   }
 }
 
@@ -261,23 +300,48 @@ oxen {
 section.w1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, 0.5fr);
   grid-template-areas:
     " box1 box2 "
-    " box3 box4 ";
-}
-
-.ox {
-  grid-area: box1;
-}
-.img3 {
-  grid-area: box2;
+    "box3 box4";
 }
 
 .ox2 {
-  grid-area: box3;
+  grid-area: box1;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.w2 {
+p.ox2 {
+  margin-top: 0%;
+}
+
+h2.ox2 {
+  margin-bottom: 0%;
+}
+/*image 3 is oxenfree img*/
+.img3 {
+  grid-area: box2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*the second image */
+.alex {
+  grid-area: box3;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+/* second paragraph in work 2*/
+.art {
   grid-area: box4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+/*text on work 2 is now in the center*/
+.item2 {
+  align-self: center;
 }
