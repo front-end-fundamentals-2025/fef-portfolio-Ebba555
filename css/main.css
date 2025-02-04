@@ -10,19 +10,20 @@ header {
   background-color: cornflowerblue;
   padding-bottom: 0vw;
   align-items: center;
-  h1 {
-    font-family: "DM Serif Display", serif;
-    font-size: 3rem;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
-    padding-left: 2vw;
-  }
-  li {
-    color: white;
-    margin-left: 12vw;
-  }
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  padding-left: 2vw;
+}
+li {
+  color: white;
+  margin-left: 12vw;
 }
 
 @media screen and (max-width: 520px) {
@@ -112,6 +113,11 @@ form {
   padding-bottom: 1vw;
   padding-top: 1vw;
   background-color: lightblue;
+  animation-name: rainbow;
+  animation-duration: 20s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 .con {
   display: flex;
@@ -119,7 +125,6 @@ form {
   align-items: center;
   margin-top: 1.5vw;
 }
-
 #sub {
   margin-top: 1vw;
   background-color: darkseagreen;
@@ -130,7 +135,22 @@ form {
   padding-right: 1vw;
 }
 
+@keyframes rainbow {
+  0% {
+    background-color: lightblue;
+  }
+
+  50% {
+    background-color: skyblue;
+  }
+
+  100% {
+    background-color: paleturquoise;
+  }
+}
+
 /* footers */
+
 footer {
   background-color: cornflowerblue;
   height: 2vw;
@@ -146,10 +166,6 @@ footer {
   left: 0;
 }
 
-/* link work - Oxenfree */
-#link {
-  color: blue;
-}
 /*text size*/
 
 .about {
@@ -344,4 +360,13 @@ h2.ox2 {
 /*text on work 2 is now in the center*/
 .item2 {
   align-self: center;
+}
+
+#link {
+  color: blue;
+  transition: color 500ms ease;
+}
+
+#link:hover {
+  color: deepskyblue;
 }
