@@ -12,6 +12,47 @@ header {
   align-items: center;
 }
 
+.load {
+  background-color: black;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-right: 3%;
+  animation-name: ball;
+  animation-iteration-count: 1;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  opacity: 0;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
+
 h1 {
   font-family: "DM Serif Display", serif;
   font-size: 3rem;
@@ -26,6 +67,10 @@ li {
   margin-left: 12vw;
 }
 
+li:hover {
+  color: black;
+}
+
 @media screen and (max-width: 520px) {
   header,
   li {
@@ -34,6 +79,14 @@ li {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .load {
+    margin-left: 80%;
+    width: 2vw;
+    height: 2vw;
+    margin-bottom: 2%;
+  }
+}
 /* Image p1 */
 .main-img {
   width: 25%;
@@ -114,7 +167,7 @@ form {
   padding-top: 1vw;
   background-color: lightblue;
   animation-name: rainbow;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-timing-function: ease;
   animation-direction: alternate;
   animation-iteration-count: infinite;
